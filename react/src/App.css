@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2,h3,h4,h5,h6 {font-weight: 600;margin-bottom: 20px;line-height: normal;}
+h1 {line-height: normal;font-weight: 700;}
+
+/* Home hero slider */
+.hero-slider-info .slick-dots li button:before{display: none;}
+.hero-slider-info .slick-dots {bottom: 50px;}
+.hero-slider-info .slick-dots li.slick-active button {background: #00A51A;}
+.hero-slider-info .slick-dots li {width: 30px;height: 8px;margin: 0 1px;padding: 0;}
+.hero-slider-info .slick-dots li button {width: 24px;height: 3px;border-radius: 35px;border: none;padding: 2px;background: #fff;}
+/* .hero-slider-info .slick-slide::after {content: "";background-color: rgb(0 0 0 / 30%);position: absolute;height: 100%;width: 100%;top: 0;left: 0;right: 0;z-index: 11;} */
+
+/* Testimonial Slider info */
+.testimonial-slider-info .slick-list { margin: 0 -7px; }
+.testimonial-slider-info .slick-slide > div { padding: 0 10px; }
+
+/* scrollbar small width */
+.scrollbar-sm-w::-webkit-scrollbar-track{border-radius: 10px;background-color: #e5e5e5;}
+.scrollbar-sm-w::-webkit-scrollbar{border-radius: 10px;width: 8px;background-color: #e5e5e5;}
+.scrollbar-sm-w::-webkit-scrollbar-thumb{border-radius: 10px;background-color: #00A51A;}
+
+
+/* ul li img green circle tick  */
+.ul-tag-circle ul.list li{position: relative;margin-bottom: 5px;}
+.ul-tag-circle ul.list li::before {content: "";background-image: url(./assets/images/faCheckCircle.svg);
+    background-repeat: no-repeat;background-size: contain;background-position: center;display: block;width: 20px;height: 20px;left: -28px;position: absolute;top: 2px;}
+
+   /* width */
+  ::-webkit-scrollbar {width: 10px;}
+    
+  /* Track */
+  ::-webkit-scrollbar-track {background: #f1f1f1;  border-radius: 10px;}
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {background: #00A51A; border-radius: 10px;}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {background: #00A51A; }
+
+  .list-circle {list-style: circle;}
+
+@media (min-width: 1024px) {
+    h1 {font-size: 44px;}
+    h2,.h2 {font-size: 34px;}
+    h3 {font-size: 30px;}
+    h4 {font-size: 24px;}
+    p {margin-bottom: 20px;}
+}
+@media (max-width: 1024px) {
+    h1 {font-size: 38px;}
+    h2,.h2 {font-size: 34px;}
+    h3 {font-size: 30px;}
+    h4 {font-size: 20px;}
+    p {margin-bottom: 20px;}
+    .hero-slider-info .slick-dots {bottom: 10px;}
+    /* width */
+    ::-webkit-scrollbar {height: 5px;}
+}
+@media (max-width: 768px) {
+    h1 {font-size: 34px;}
+    h2,.h2 {font-size: 30px;}
+    h3 {font-size: 24px;}
+    p {margin-bottom: 15px;}
+}
+
+
+/* Animation CSS */
+ @keyframes animate-bounceTop{
+    0% {
+        margin-top: -20px;
+    }
+    100% {
+        margin-top: 40px;
+    }
+ }
